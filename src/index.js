@@ -10,7 +10,7 @@ app.use(session({
   resave: false,
   saveUninitialized: true,
   cookie:{
-    maxAge: 10*60*1000
+    maxAge: 10*60*1000 //Definimos o tempo de 10 minutos para fechar a sessão
   }
 }));
 app.use(express.urlencoded({ extended: true }));
